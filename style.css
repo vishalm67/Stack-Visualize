@@ -7,8 +7,12 @@
     font-family: "Poppins", sans-serif;
     color :aliceblue;
 }
-.text{
+.input_bar{
     color:black;
+    transition: all 0.3s ease;
+
+}.input_bar:focus::placeholder {
+  color: transparent; 
 }
 body {
     height: 100vh;
@@ -72,17 +76,24 @@ header {
     font-size: 25px;
     background-color: rgb(0, 0, 0);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.2s ease; 
     border: none;
+      z-index: 0;
+}.push:hover,
+.pop:hover,
+.reset:hover {
+  transform: scale(1.1); /* makes it come forward */
+  z-index: 10;           /* brings it to front */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* adds a glowing depth */
 }
 .disable-button {
     background-color: rgb(56, 56, 56);
 }
 
 .container-header button:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 .container-body {
     width: 1000px;
@@ -97,8 +108,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-width: 0 2px 0 0;
-    border-color: rgb(255, 255, 255);
+    border-width: 0 0 0 0;
+    border-color: none;
     border-style: solid;
 }
 
