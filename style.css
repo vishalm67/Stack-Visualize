@@ -7,12 +7,8 @@
     font-family: "Poppins", sans-serif;
     color :aliceblue;
 }
-.input_bar{
-    color:black;
-    transition: all 0.3s ease;
-
-}.input_bar:focus::placeholder {
-  color: transparent; 
+.text{
+    color: black;
 }
 body {
     height: 100vh;
